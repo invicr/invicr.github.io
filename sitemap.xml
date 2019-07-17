@@ -4,12 +4,17 @@
 
     <sitemap>
         <loc>https://invicr.github.io/post-sitemap.xml</loc>
-        <lastmod>2019-07-17T14:08:38.218Z</lastmod>
+        <lastmod>2019-07-17T14:13:11.771Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://invicr.github.io/category-sitemap.xml</loc>
+        <lastmod>2019-07-17T14:13:11.771Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>https://invicr.github.io/tag-sitemap.xml</loc>
-        <lastmod>2019-07-17T14:08:38.218Z</lastmod>
+        <lastmod>2019-07-17T14:13:11.771Z</lastmod>
     </sitemap>
 
 </sitemapindex>

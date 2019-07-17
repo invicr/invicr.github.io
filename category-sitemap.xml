@@ -8,19 +8,10 @@
     </url>
 
     <url>
-        <loc>https://invicr.github.io/2019/07/17/testpost/</loc>
+        <loc>https://invicr.github.io/categories/About/</loc>
         <lastmod>2019-07-17T14:13:11.771Z</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://invicr.github.io/2019/07/16/hello-world/</loc>
-        <lastmod>2019-07-16T11:27:18.584Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
+        <priority>0.2</priority>
     </url>
 
 </urlset>
