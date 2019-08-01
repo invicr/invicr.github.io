@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>https://invicr.github.io/tags/git-branch-develop/</loc>
+        <lastmod>2019-08-01T12:22:11.881Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://invicr.github.io/tags/git-branch/</loc>
+        <lastmod>2019-08-01T12:22:11.881Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://invicr.github.io/tags/git/</loc>
+        <lastmod>2019-08-01T12:22:11.881Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://invicr.github.io/tags/test/</loc>
         <lastmod>2019-07-21T13:16:31.102Z</lastmod>
         <changefreq>weekly</changefreq>

@@ -6,17 +6,24 @@
     
 
     
-    <title>Archive | Modern Developer의 개발 일지</title>
+    <title>git clone develop 선택하기 | Modern Developer의 개발 일지</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Modern Developer의 개발 일지">
-<meta property="og:url" content="https://invicr.github.io/archives/index.html">
+        <meta name="keywords" content="git,git branch,git branch develop">
+    
+    <meta name="description" content="git에서 특정 branch 선택하여 clone 하기    사용법  1git clone -b &amp;lt;branch&amp;gt; &amp;lt;remote_repo&amp;gt;   예제  1git clone -b develop git@github.com:username/folder.git">
+<meta name="keywords" content="git,git branch,git branch develop">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git clone develop 선택하기">
+<meta property="og:url" content="https://invicr.github.io/2019/08/01/git-clone-develop-선택하기/index.html">
 <meta property="og:site_name" content="Modern Developer의 개발 일지">
+<meta property="og:description" content="git에서 특정 branch 선택하여 clone 하기    사용법  1git clone -b &amp;lt;branch&amp;gt; &amp;lt;remote_repo&amp;gt;   예제  1git clone -b develop git@github.com:username/folder.git">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-01T12:22:11.881Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Modern Developer의 개발 일지">
+<meta name="twitter:title" content="git clone develop 선택하기">
+<meta name="twitter:description" content="git에서 특정 branch 선택하여 clone 하기    사용법  1git clone -b &amp;lt;branch&amp;gt; &amp;lt;remote_repo&amp;gt;   예제  1git clone -b develop git@github.com:username/folder.git">
     
 
     
@@ -125,45 +132,144 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-archive"></i>Archive
+    <a class="page-title-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Programming/Git/">Git</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-git-clone-develop-선택하기" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2019" class="archive-year"><i class="icon fa fa-calendar-o"></i>2019</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Git/">Git</a>
-            </div>
-            <div class="date"><time datetime="2019-08-01T12:04:31.000Z" itemprop="datePublished">2019-08-01</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2019/08/01/git-clone-develop-선택하기/">git clone develop 선택하기</a>
+        git clone develop 선택하기
         </h1>
     
 
-        <p class="article-excerpt">
-            git에서 특정 branch 선택하여 clone 하기
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/08/01/git-clone-develop-선택하기/" class="article-date">
+            <time datetime="2019-08-01T12:04:31.000Z" itemprop="datePublished">2019-08-01</time>
+        </a>
+    </div>
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/git/">git</a>, <a class="tag-link" href="/tags/git-branch/">git branch</a>, <a class="tag-link" href="/tags/git-branch-develop/">git branch develop</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h2>git에서 특정 branch 선택하여 clone 하기</h2>
+<hr>
+
+<blockquote>
+<p>사용법</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b &lt;branch&gt; &lt;remote_repo&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>예제</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b develop git@github.com:username/folder.git</span><br></pre></td></tr></table></figure>
+
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://invicr.github.io/2019/08/01/git-clone-develop-선택하기/" data-id="cjysngu8b00009qef3zfom8dy" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "invicr"
+        },
+        "headline": "git clone develop 선택하기",
+        "image": "https://invicr.github.io",
+        "keywords": "git git branch git branch develop",
+        "genre": "Programming Git",
+        "datePublished": "2019-08-01",
+        "dateCreated": "2019-08-01",
+        "dateModified": "2019-08-01",
+        "url": "https://invicr.github.io/2019/08/01/git-clone-develop-선택하기/",
+        "description": "git에서 특정 branch 선택하여 clone 하기
 
 
 
@@ -176,76 +282,22 @@
 
 1git clone -b develop git@github.com:username/folder.git
 
+"
+        "wordCount": 26
+    }
+</script>
 
-        </p>
-    </div>
 </article>
-    
 
+    <section id="comments">
     
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
         
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Java/">Java</a>
-            </div>
-            <div class="date"><time datetime="2019-07-17T14:02:52.000Z" itemprop="datePublished">2019-07-17</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2019/07/17/testpost/">Test</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            반갑습니다. 테스트 입니다.
-
-        </p>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-</article>
-    
-        </div>
-    
 
     
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2019-07-16T11:27:18.583Z" itemprop="datePublished">2019-07-16</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2019/07/16/hello-world/">Hello World</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-
-    </div></section>
+    </section>
 
 
 
@@ -275,6 +327,19 @@ Quick
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2019/07/17/testpost/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Test</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -410,11 +475,13 @@ Quick
     var disqus_shortname = 'invicr';
     
     
+    var disqus_url = 'https://invicr.github.io/2019/08/01/git-clone-develop-선택하기/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
