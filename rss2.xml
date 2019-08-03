@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Modern Developer의 개발 일지</title>
+    <link>https://invicr.github.io/</link>
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description></description>
+    <pubDate>Sat, 03 Aug 2019 13:52:33 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>chrome 테마 Momentum 적용</title>
+      <link>https://invicr.github.io/2019/08/03/chrome-%ED%85%8C%EB%A7%88-Momentum/</link>
+      <guid>https://invicr.github.io/2019/08/03/chrome-%ED%85%8C%EB%A7%88-Momentum/</guid>
+      <pubDate>Sat, 03 Aug 2019 13:13:30 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h2 id=&quot;Chrome에-시계-테마-Momentum-적용-해보기&quot;&gt;&lt;a href=&quot;#Chrome에-시계-테마-Momentum-적용-해보기&quot; class=&quot;headerlink&quot; title=&quot;Chrome에 시계 테마 Momentum 적용 해보기&quot;&gt;&lt;/a
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h2 id="Chrome에-시계-테마-Momentum-적용-해보기"><a href="#Chrome에-시계-테마-Momentum-적용-해보기" class="headerlink" title="Chrome에 시계 테마 Momentum 적용 해보기"></a>Chrome에 시계 테마 Momentum 적용 해보기</h2><hr><p>Momentum은 새 탭이 띄워졌을 때 멋진 풍경과 시간, 지역 온도 등을 표시해주는 무료 테마입니다.<br>(유료로 제공하는 기능도 있습니다.)</p><p>Momentum은 아래 링크를 통해 크롬 확장 프로그램으로 설치 할 수 있습니다.</p><p><a href="https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=ko" rel="external nofollow noopener noreferrer" target="_blank">Momentum Chrome 웹 스토어</a></p><ol><li>크롬 웹스토어에 접속하여 <code>Chrome에 추가</code> 버튼을 선택합니다.</li></ol><p><img src="momentum1.png" alt>  </p><ol start="2"><li>설치가 완료되고 새 탭이 열리면 아래와 같은 화면이 나옵니다. 이름을 입력해주세요.</li></ol><p><img src="momentum2.png" alt>  </p><ol start="3"><li>입력된 이름이 설정되었고, 설치가 완료 되었습니다.</li></ol><p><img src="momentum3.png" alt>  </p><p>이로써 설치는 완료 되었습니다! 배경은 랜덤으로 바뀌게 됩니다.</p>]]></content:encoded>
+      
+      <comments>https://invicr.github.io/2019/08/03/chrome-%ED%85%8C%EB%A7%88-Momentum/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>git clone develop 선택하기</title>
+      <link>https://invicr.github.io/2019/08/01/git-clone-develop-%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0/</link>
+      <guid>https://invicr.github.io/2019/08/01/git-clone-develop-%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Thu, 01 Aug 2019 12:04:31 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h2&gt;git에서 특정 branch 선택하여 clone 하기&lt;/h2&gt;
+&lt;hr&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;사용법&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gut
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h2>git에서 특정 branch 선택하여 clone 하기</h2><hr><blockquote><p>사용법</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b &lt;branch&gt; &lt;remote_repo&gt;</span><br></pre></td></tr></table></figure><blockquote><p>예제</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b develop git@github.com:username/folder.git</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      <comments>https://invicr.github.io/2019/08/01/git-clone-develop-%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
