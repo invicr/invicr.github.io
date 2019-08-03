@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://invicr.github.io/categories/IT/ETC/</loc>
+        <lastmod>2019-08-03T13:52:33.020Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://invicr.github.io/categories/IT/</loc>
+        <lastmod>2019-08-03T13:52:33.020Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://invicr.github.io/categories/Programming/Git/</loc>
         <lastmod>2019-08-01T12:24:55.431Z</lastmod>
         <changefreq>weekly</changefreq>
