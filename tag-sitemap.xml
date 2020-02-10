@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>https://invicr.github.io/tags/reverse/</loc>
+        <lastmod>2020-02-10T14:07:51.451Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://invicr.github.io/tags/StringBuffer/</loc>
+        <lastmod>2020-02-10T14:07:51.451Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://invicr.github.io/tags/Java/</loc>
+        <lastmod>2020-02-10T14:07:51.451Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://invicr.github.io/tags/Momentum/</loc>
         <lastmod>2019-08-03T13:52:33.020Z</lastmod>
         <changefreq>weekly</changefreq>
