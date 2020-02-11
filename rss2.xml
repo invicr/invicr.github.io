@@ -8,8 +8,27 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 11 Feb 2020 12:21:48 GMT</pubDate>
+    <pubDate>Tue, 11 Feb 2020 12:49:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>배열 역순으로 출력하기</title>
+      <link>https://invicr.github.io/2020/02/11/%EB%B0%B0%EC%97%B4-%EC%97%AD%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/</link>
+      <guid>https://invicr.github.io/2020/02/11/%EB%B0%B0%EC%97%B4-%EC%97%AD%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Tue, 11 Feb 2020 12:27:49 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;import java.util.Arrays;&lt;br&gt;import java.util.Collections;&lt;br&gt;import java.util.List;&lt;br&gt;public class Main {&lt;br&gt;    public static void main
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>import java.util.Arrays;<br>import java.util.Collections;<br>import java.util.List;<br>public class Main {<br>    public static void main(String[] args) {<br>        String[] arr = {“1”, “2”, “3”, “4”, “5”};<br>        // [1, 2, 3, 4, 5]<br>        System.out.println(Arrays.toString(arr));<br>        // Arrays.asList는 배열을 리스트로 반환해 준다.<br>        List<string> list = Arrays.asList(arr);<br>        // 리스트의 구성을 반대로 뒤집는다.<br>        Collections.reverse(list);<br>        // 리스트를 배열로 변환한다.<br>        arr = list.toArray(new String[list.size()]);<br>        // [5, 4, 3, 2, 1]<br>        System.out.println(Arrays.toString(arr));<br>    }<br>}</string></p>]]></content:encoded>
+      
+      <comments>https://invicr.github.io/2020/02/11/%EB%B0%B0%EC%97%B4-%EC%97%AD%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>문자열 거꾸로 출력하기</title>
