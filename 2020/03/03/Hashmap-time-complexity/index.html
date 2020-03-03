@@ -6,24 +6,29 @@
     
 
     
-    <title>Hashtable time complexity | Modern Developer의 개발 일지</title>
+    <title>HashMap time complexity | Modern Developer의 개발 일지</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="hashtable">
+        <meta name="keywords" content="hashmap">
     
-    <meta name="keywords" content="hashtable">
+    <meta name="description" content="HashMap이란?Key, Value를 하나의 데이터(Entry)로 저장하는 Map의 구현제 중 하나이다. HashMap의 특징은 아래와 같다.  null key와 null value를 모두 허용한다. 내부적으로 데이터에 접근할 때 동기화를 보장하지 않는다. 데이터의 순서를 보장하지 않는다. 중복된 key값을 허용하진 않지만, 중복된 값은 갖을 수 있다.">
+<meta name="keywords" content="hashmap">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hashtable time complexity">
-<meta property="og:url" content="https://invicr.github.io/2020/03/03/Hashtable-time-complexity/index.html">
+<meta property="og:title" content="HashMap time complexity">
+<meta property="og:url" content="https://invicr.github.io/2020/03/03/Hashmap-time-complexity/index.html">
 <meta property="og:site_name" content="Modern Developer의 개발 일지">
+<meta property="og:description" content="HashMap이란?Key, Value를 하나의 데이터(Entry)로 저장하는 Map의 구현제 중 하나이다. HashMap의 특징은 아래와 같다.  null key와 null value를 모두 허용한다. 내부적으로 데이터에 접근할 때 동기화를 보장하지 않는다. 데이터의 순서를 보장하지 않는다. 중복된 key값을 허용하진 않지만, 중복된 값은 갖을 수 있다.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-03-03T10:17:44.250Z">
+<meta property="og:image" content="https://codenuclear.com/wp-content/uploads/2017/11/bucket_entries.jpg">
+<meta property="og:updated_time" content="2020-03-03T11:52:35.936Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hashtable time complexity">
+<meta name="twitter:title" content="HashMap time complexity">
+<meta name="twitter:description" content="HashMap이란?Key, Value를 하나의 데이터(Entry)로 저장하는 Map의 구현제 중 하나이다. HashMap의 특징은 아래와 같다.  null key와 null value를 모두 허용한다. 내부적으로 데이터에 접근할 때 동기화를 보장하지 않는다. 데이터의 순서를 보장하지 않는다. 중복된 key값을 허용하진 않지만, 중복된 값은 갖을 수 있다.">
+<meta name="twitter:image" content="https://codenuclear.com/wp-content/uploads/2017/11/bucket_entries.jpg">
     
 
-    <link rel="canonical" href="https://invicr.github.io/2020/03/03/hashtable-time-complexity/">
+    <link rel="canonical" href="https://invicr.github.io/2020/03/03/hashmap-time-complexity/">
 
     
         <link rel="alternate" href="/" title="Modern Developer의 개발 일지" type="application/atom+xml">
@@ -136,14 +141,14 @@
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-Hashtable-time-complexity" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-Hashmap-time-complexity" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Hashtable time complexity
+        HashMap time complexity
         </h1>
     
 
@@ -153,7 +158,7 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2020/03/03/Hashtable-time-complexity/" class="article-date">
+        <a href="/2020/03/03/Hashmap-time-complexity/" class="article-date">
             <time datetime="2020-03-03T10:16:42.000Z" itemprop="datePublished">2020-03-03</time>
         </a>
     </div>
@@ -163,21 +168,32 @@
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/hashtable/">hashtable</a>
+        <a class="tag-link" href="/tags/hashmap/">hashmap</a>
     </div>
 
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            
+            <h3 id="HashMap이란"><a href="#HashMap이란" class="headerlink" title="HashMap이란?"></a>HashMap이란?</h3><p>Key, Value를 하나의 데이터(Entry)로 저장하는 Map의 구현제 중 하나이다.</p>
+<p>HashMap의 특징은 아래와 같다.</p>
+<ul>
+<li>null key와 null value를 모두 허용한다.</li>
+<li>내부적으로 데이터에 접근할 때 동기화를 보장하지 않는다.</li>
+<li>데이터의 순서를 보장하지 않는다.</li>
+<li>중복된 key값을 허용하진 않지만, 중복된 값은 갖을 수 있다.</li>
+</ul>
+<h3 id="HashMap-구조"><a href="#HashMap-구조" class="headerlink" title="HashMap 구조"></a>HashMap 구조</h3><p>HashMap은 key를 hash 함수에 넣어 나온 value를 bucket의 특정 인덱스에 저장한다. H(k) = k mod M 의 계산식을 통해서 버킷의 크기보다 작은 인덱스에 저장을 하도록 한다. (1/M확률로 충돌이 발생하게 된다.)</p>
+<p><img src="https://codenuclear.com/wp-content/uploads/2017/11/bucket_entries.jpg" alt><br>이미지 출처 : <a href="https://codenuclear.com/difference-between-hashmap-hashtable/" rel="external nofollow noopener noreferrer" target="_blank">https://codenuclear.com/difference-between-hashmap-hashtable/</a></p>
+<h3 id="Time-complexity"><a href="#Time-complexity" class="headerlink" title="Time complexity"></a>Time complexity</h3><p>key는 고유하며 해시 함수의 결과로 나온 해시에 매칭되는 value를 찾으면 되기 때문에 시간 복잡도는 O(1)이다.<br>최악의 경우는 해시 충돌로 인해 모든 bucket의 value들을 찾아 봐야 하는 경우도 있기 때문에 시간 복잡도는 O(n)이다.</p>
+
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="https://invicr.github.io/2020/03/03/Hashtable-time-complexity/" data-id="ck7bsfprg0002l7efwp1bs8iq" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://invicr.github.io/2020/03/03/Hashmap-time-complexity/" data-id="ck7bu1y6k0000pfefj3ggqqbk" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -247,16 +263,23 @@
             "@type": "Person",
             "name": "invicr"
         },
-        "headline": "Hashtable time complexity",
-        "image": "https://invicr.github.io",
-        "keywords": "hashtable",
+        "headline": "HashMap time complexity",
+        "image": "https://invicr.github.iohttps://codenuclear.com/wp-content/uploads/2017/11/bucket_entries.jpg",
+        "keywords": "hashmap",
         "genre": "Programming Java",
         "datePublished": "2020-03-03",
         "dateCreated": "2020-03-03",
         "dateModified": "2020-03-03",
-        "url": "https://invicr.github.io/2020/03/03/Hashtable-time-complexity/",
-        "description": ""
-        "wordCount": 1
+        "url": "https://invicr.github.io/2020/03/03/Hashmap-time-complexity/",
+        "description": "HashMap이란?Key, Value를 하나의 데이터(Entry)로 저장하는 Map의 구현제 중 하나이다.
+HashMap의 특징은 아래와 같다.
+
+null key와 null value를 모두 허용한다.
+내부적으로 데이터에 접근할 때 동기화를 보장하지 않는다.
+데이터의 순서를 보장하지 않는다.
+중복된 key값을 허용하진 않지만, 중복된 값은 갖을 수 있다.
+"
+        "wordCount": 120
     }
 </script>
 
@@ -349,7 +372,7 @@
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Java/">Java</a></p>
-                            <p class="item-title"><a href="/2020/03/03/Hashtable-time-complexity/" class="title">Hashtable time complexity</a></p>
+                            <p class="item-title"><a href="/2020/03/03/Hashmap-time-complexity/" class="title">HashMap time complexity</a></p>
                             <p class="item-date"><time datetime="2020-03-03T10:16:42.000Z" itemprop="datePublished">2020-03-03</time></p>
                         </div>
                     </li>
@@ -410,7 +433,7 @@
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Array/" style="font-size: 10px;">Array</a> <a href="/tags/Array-reverse/" style="font-size: 10px;">Array reverse</a> <a href="/tags/ConcurrentModificationException/" style="font-size: 10px;">ConcurrentModificationException</a> <a href="/tags/IntelliJ/" style="font-size: 10px;">IntelliJ</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Momentum/" style="font-size: 10px;">Momentum</a> <a href="/tags/StringBuffer/" style="font-size: 10px;">StringBuffer</a> <a href="/tags/chrome-Momentum/" style="font-size: 10px;">chrome Momentum</a> <a href="/tags/chrome-시계/" style="font-size: 10px;">chrome 시계</a> <a href="/tags/chrome-시계-테마/" style="font-size: 10px;">chrome 시계 테마</a> <a href="/tags/chrome-테마/" style="font-size: 10px;">chrome 테마</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/git-branch-develop/" style="font-size: 10px;">git branch develop</a> <a href="/tags/git-branch-선택하기/" style="font-size: 10px;">git branch 선택하기</a> <a href="/tags/hashtable/" style="font-size: 10px;">hashtable</a> <a href="/tags/import/" style="font-size: 10px;">import</a> <a href="/tags/import-없애기/" style="font-size: 10px;">import.*없애기</a> <a href="/tags/reverse/" style="font-size: 15px;">reverse</a> <a href="/tags/배열/" style="font-size: 10px;">배열</a> <a href="/tags/배열-삭제/" style="font-size: 10px;">배열 삭제</a> <a href="/tags/최대값/" style="font-size: 10px;">최대값</a> <a href="/tags/최소값/" style="font-size: 10px;">최소값</a>
+            <a href="/tags/Array/" style="font-size: 10px;">Array</a> <a href="/tags/Array-reverse/" style="font-size: 10px;">Array reverse</a> <a href="/tags/ConcurrentModificationException/" style="font-size: 10px;">ConcurrentModificationException</a> <a href="/tags/IntelliJ/" style="font-size: 10px;">IntelliJ</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Momentum/" style="font-size: 10px;">Momentum</a> <a href="/tags/StringBuffer/" style="font-size: 10px;">StringBuffer</a> <a href="/tags/chrome-Momentum/" style="font-size: 10px;">chrome Momentum</a> <a href="/tags/chrome-시계/" style="font-size: 10px;">chrome 시계</a> <a href="/tags/chrome-시계-테마/" style="font-size: 10px;">chrome 시계 테마</a> <a href="/tags/chrome-테마/" style="font-size: 10px;">chrome 테마</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/git-branch-develop/" style="font-size: 10px;">git branch develop</a> <a href="/tags/git-branch-선택하기/" style="font-size: 10px;">git branch 선택하기</a> <a href="/tags/hashmap/" style="font-size: 10px;">hashmap</a> <a href="/tags/import/" style="font-size: 10px;">import</a> <a href="/tags/import-없애기/" style="font-size: 10px;">import.*없애기</a> <a href="/tags/reverse/" style="font-size: 15px;">reverse</a> <a href="/tags/배열/" style="font-size: 10px;">배열</a> <a href="/tags/배열-삭제/" style="font-size: 10px;">배열 삭제</a> <a href="/tags/최대값/" style="font-size: 10px;">최대값</a> <a href="/tags/최소값/" style="font-size: 10px;">최소값</a>
         </div>
     </div>
 
@@ -466,7 +489,7 @@
     var disqus_shortname = 'invicr';
     
     
-    var disqus_url = 'https://invicr.github.io/2020/03/03/Hashtable-time-complexity/';
+    var disqus_url = 'https://invicr.github.io/2020/03/03/Hashmap-time-complexity/';
     
     (function() {
     var dsq = document.createElement('script');
