@@ -20,7 +20,7 @@
 <meta property="og:site_name" content="Modern Developer의 개발 일지">
 <meta property="og:description" content="1.개요자바 객체를 비교하기 위해서 Comparable 혹은 Comparator라는 인터페이스를 사용하게 된다. 두 인터페이스의 차이점을 예제로 살펴보도록 하자. 2.예제로 살펴보기Player 클래스 만들기 1234567public class Player &amp;#123;    private int ranking;    private String name;">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-03-04T16:04:39.079Z">
+<meta property="og:updated_time" content="2020-03-04T16:06:50.898Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Comparable vs Comparator">
 <meta name="twitter:description" content="1.개요자바 객체를 비교하기 위해서 Comparable 혹은 Comparator라는 인터페이스를 사용하게 된다. 두 인터페이스의 차이점을 예제로 살펴보도록 하자. 2.예제로 살펴보기Player 클래스 만들기 1234567public class Player &amp;#123;    private int ranking;    private String name;">
@@ -192,7 +192,7 @@
 
 <h3 id="4-Comparator"><a href="#4-Comparator" class="headerlink" title="4.Comparator"></a>4.Comparator</h3><p><code>Comparator</code>는 객체 간의 특정한 정렬이 필요할 때, <code>Comparator</code> 인터페이스를 확장해서 특정 기준을 정의하는 <code>compare()</code> 메소드를 오버라이딩하여 구현한다.</p>
 <p>아래는 ranking과 age로 정렬하는 별도의 구현 클래스이다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PlayerRankingComparator</span> <span class="keyword">implements</span> <span class="title">Comparator</span>&lt;<span class="title">Player</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Player firstPlayer, Player secondPlayer)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> (firstPlayer.getRanking() - secondPlayer.getRanking());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PlayerRankingComparator</span> <span class="keyword">implements</span> <span class="title">Comparator</span>&lt;<span class="title">Player</span>&gt; </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Player firstPlayer, Player secondPlayer)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> (firstPlayer.getRanking() - secondPlayer.getRanking());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PlayerAgeComparator</span> <span class="keyword">implements</span> <span class="title">Comparator</span>&lt;<span class="title">Player</span>&gt; </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Player firstPlayer, Player secondPlayer)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> (firstPlayer.getAge() - secondPlayer.getAge());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -292,7 +292,7 @@
         "description": "1.개요자바 객체를 비교하기 위해서 Comparable 혹은 Comparator라는 인터페이스를 사용하게 된다. 두 인터페이스의 차이점을 예제로 살펴보도록 하자.
 2.예제로 살펴보기Player 클래스 만들기
 1234567public class Player &#123;    private int ranking;    private String name;   "
-        "wordCount": 927
+        "wordCount": 925
     }
 </script>
 
