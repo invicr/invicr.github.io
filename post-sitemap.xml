@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://invicr.github.io/2020/03/04/comparable-vs-comparator/</loc>
+        <lastmod>2020-03-04T16:04:39.079Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://invicr.github.io/2020/03/03/Hashmap-time-complexity/</loc>
         <lastmod>2020-03-04T11:22:42.789Z</lastmod>
         <changefreq>weekly</changefreq>

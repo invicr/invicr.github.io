@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://invicr.github.io/tags/comparator/</loc>
+        <lastmod>2020-03-04T16:04:39.079Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://invicr.github.io/tags/comparable/</loc>
+        <lastmod>2020-03-04T16:04:39.079Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://invicr.github.io/tags/hashmap/</loc>
         <lastmod>2020-03-04T11:22:42.789Z</lastmod>
         <changefreq>weekly</changefreq>
