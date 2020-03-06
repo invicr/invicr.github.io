@@ -6,24 +6,24 @@
     
 
     
-    <title>equals, == | Modern Developer의 개발 일지</title>
+    <title>== vs equals() | Modern Developer의 개발 일지</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="equals(),==,equals(), ==">
+        <meta name="keywords" content="equals(),==,== vs equals()">
     
-    <meta name="description" content="Java에서 equals()와 ==는 객체 혹은 내용을 비교할 때 사용하곤 한다. 이 둘은 어떤 차이점이 있을까? == Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인 그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인123456789//리터럴 생성String str1 = &quot;h">
-<meta name="keywords" content="equals(),==,equals(), ==">
+    <meta name="description" content="Java에서 equals()와 ==는 객체 혹은 내용을 비교할 때 사용하곤 한다. 이 둘은 어떤 차이점이 있을까? == : 동일성 비교 Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인 그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인123456789//리터럴 생성String">
+<meta name="keywords" content="equals(),==,== vs equals()">
 <meta property="og:type" content="article">
-<meta property="og:title" content="equals, ==">
+<meta property="og:title" content="== vs equals()">
 <meta property="og:url" content="https://invicr.github.io/2020/03/06/equals/index.html">
 <meta property="og:site_name" content="Modern Developer의 개발 일지">
-<meta property="og:description" content="Java에서 equals()와 ==는 객체 혹은 내용을 비교할 때 사용하곤 한다. 이 둘은 어떤 차이점이 있을까? == Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인 그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인123456789//리터럴 생성String str1 = &quot;h">
+<meta property="og:description" content="Java에서 equals()와 ==는 객체 혹은 내용을 비교할 때 사용하곤 한다. 이 둘은 어떤 차이점이 있을까? == : 동일성 비교 Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인 그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인123456789//리터럴 생성String">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-03-06T13:38:42.437Z">
+<meta property="og:updated_time" content="2020-03-06T13:42:27.010Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="equals, ==">
-<meta name="twitter:description" content="Java에서 equals()와 ==는 객체 혹은 내용을 비교할 때 사용하곤 한다. 이 둘은 어떤 차이점이 있을까? == Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인 그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인123456789//리터럴 생성String str1 = &quot;h">
+<meta name="twitter:title" content="== vs equals()">
+<meta name="twitter:description" content="Java에서 equals()와 ==는 객체 혹은 내용을 비교할 때 사용하곤 한다. 이 둘은 어떤 차이점이 있을까? == : 동일성 비교 Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인 그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인123456789//리터럴 생성String">
     
 
     <link rel="canonical" href="https://invicr.github.io/2020/03/06/equals/">
@@ -146,7 +146,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-        equals, ==
+        == vs equals()
         </h1>
     
 
@@ -166,7 +166,7 @@
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/">==</a>, <a class="tag-link" href="/tags/equals/">equals()</a>, <a class="tag-link" href="/tags/equals/">equals(), ==</a>
+        <a class="tag-link" href="/tags/">==</a>, <a class="tag-link" href="/tags/vs-equals/">== vs equals()</a>, <a class="tag-link" href="/tags/equals/">equals()</a>
     </div>
 
             </div>
@@ -174,7 +174,7 @@
         
         <div class="article-entry" itemprop="articleBody">
             <p>Java에서 <code>equals()</code>와 <code>==</code>는 객체 혹은 내용을 비교할 때 사용하곤 한다. 이 둘은 어떤 차이점이 있을까?</p>
-<h3 id><a href="#" class="headerlink" title="=="></a>==</h3><ul>
+<h3 id="동일성-비교"><a href="#동일성-비교" class="headerlink" title="== : 동일성 비교"></a>== : 동일성 비교</h3><ul>
 <li>Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인</li>
 <li>그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//리터럴 생성</span></span><br><span class="line">String str1 = <span class="string">"hi"</span>;</span><br><span class="line">String str2 = <span class="string">"hi"</span>;</span><br><span class="line">System.out.println(str1 == str2);   <span class="comment">//true</span></span><br><span class="line"><span class="comment">//new를 이용한 생성</span></span><br><span class="line">String str3 = <span class="keyword">new</span> String(<span class="string">"hi"</span>);</span><br><span class="line">String str4 = <span class="keyword">new</span> String(<span class="string">"hi"</span>);</span><br><span class="line">System.out.println(str3 == str4);   <span class="comment">//false</span></span><br><span class="line">System.out.println(str1 == str3);   <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
 
@@ -186,7 +186,7 @@
 <li><code>str3 == str4</code> : new로 생성되어 각각 다른 주소에 생성되기 때문에 <strong>false</strong></li>
 <li><code>str1 == str3</code> : 리터럴과 new로 생성되어 서로 다른 주소에 위치하기 때문에 <strong>false</strong><br>결론적으로 <code>==</code> 두 객체가 같은 주소를 가르킬 때 true를 반환한다.</li>
 </ul>
-<h3 id="equals"><a href="#equals" class="headerlink" title="equals()"></a>equals()</h3><ul>
+<h3 id="equals-동등성-비교"><a href="#equals-동등성-비교" class="headerlink" title="equals() : 동등성 비교"></a>equals() : 동등성 비교</h3><ul>
 <li>Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인</li>
 <li>그 외 객체나 Reference Type일 경우에는 주소가 같은지 확인</li>
 <li><code>==</code>과 유사하지만 다른 점은 완전히 같은 객체(같은 주소)를 가리키지 않아도 <code>equals()</code> 메서드 오버라이딩을 통해서 true로 만들 수 있다.<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">String str1 = <span class="string">"hi"</span>;</span><br><span class="line">String str2 = <span class="string">"hi"</span>;</span><br><span class="line">System.out.println(str1.equals(str2));   <span class="comment">//true</span></span><br><span class="line">String str3 = <span class="keyword">new</span> String(<span class="string">"hi"</span>);</span><br><span class="line">String str4 = <span class="keyword">new</span> String(<span class="string">"hi"</span>);</span><br><span class="line">System.out.println(str3.equals(str4));   <span class="comment">//true</span></span><br><span class="line">System.out.println(str1.equals(str3));   <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
@@ -291,19 +291,19 @@
             "@type": "Person",
             "name": "invicr"
         },
-        "headline": "equals, ==",
+        "headline": "== vs equals()",
         "image": "https://invicr.github.io",
-        "keywords": "equals() == equals(), ==",
+        "keywords": "equals() == == vs equals()",
         "genre": "Programming Java",
         "datePublished": "2020-03-06",
         "dateCreated": "2020-03-06",
         "dateModified": "2020-03-06",
         "url": "https://invicr.github.io/2020/03/06/equals/",
         "description": "Java에서 equals()와 ==는 객체 혹은 내용을 비교할 때 사용하곤 한다. 이 둘은 어떤 차이점이 있을까?
-==
+== : 동일성 비교
 Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인
-그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인123456789//리터럴 생성String str1 = "h"
-        "wordCount": 795
+그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인123456789//리터럴 생성String "
+        "wordCount": 807
     }
 </script>
 
@@ -377,7 +377,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Java/">Java</a></p>
-                            <p class="item-title"><a href="/2020/03/06/equals/" class="title">equals, ==</a></p>
+                            <p class="item-title"><a href="/2020/03/06/equals/" class="title">== vs equals()</a></p>
                             <p class="item-date"><time datetime="2020-03-06T12:13:40.000Z" itemprop="datePublished">2020-03-06</time></p>
                         </div>
                     </li>
@@ -447,7 +447,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/" style="font-size: 10px;">==</a> <a href="/tags/Array/" style="font-size: 10px;">Array</a> <a href="/tags/Array-reverse/" style="font-size: 10px;">Array reverse</a> <a href="/tags/ConcurrentModificationException/" style="font-size: 10px;">ConcurrentModificationException</a> <a href="/tags/IntelliJ/" style="font-size: 10px;">IntelliJ</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Momentum/" style="font-size: 10px;">Momentum</a> <a href="/tags/StringBuffer/" style="font-size: 10px;">StringBuffer</a> <a href="/tags/chrome-Momentum/" style="font-size: 10px;">chrome Momentum</a> <a href="/tags/chrome-시계/" style="font-size: 10px;">chrome 시계</a> <a href="/tags/chrome-시계-테마/" style="font-size: 10px;">chrome 시계 테마</a> <a href="/tags/chrome-테마/" style="font-size: 10px;">chrome 테마</a> <a href="/tags/comparable/" style="font-size: 10px;">comparable</a> <a href="/tags/comparator/" style="font-size: 10px;">comparator</a> <a href="/tags/equals/" style="font-size: 10px;">equals()</a> <a href="/tags/equals/" style="font-size: 10px;">equals(), ==</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/git-branch-develop/" style="font-size: 10px;">git branch develop</a> <a href="/tags/git-branch-선택하기/" style="font-size: 10px;">git branch 선택하기</a> <a href="/tags/hashmap/" style="font-size: 10px;">hashmap</a> <a href="/tags/import/" style="font-size: 10px;">import</a> <a href="/tags/import-없애기/" style="font-size: 10px;">import.*없애기</a> <a href="/tags/reverse/" style="font-size: 15px;">reverse</a> <a href="/tags/배열/" style="font-size: 10px;">배열</a> <a href="/tags/배열-삭제/" style="font-size: 10px;">배열 삭제</a> <a href="/tags/최대값/" style="font-size: 10px;">최대값</a> <a href="/tags/최소값/" style="font-size: 10px;">최소값</a>
+            <a href="/tags/" style="font-size: 10px;">==</a> <a href="/tags/vs-equals/" style="font-size: 10px;">== vs equals()</a> <a href="/tags/Array/" style="font-size: 10px;">Array</a> <a href="/tags/Array-reverse/" style="font-size: 10px;">Array reverse</a> <a href="/tags/ConcurrentModificationException/" style="font-size: 10px;">ConcurrentModificationException</a> <a href="/tags/IntelliJ/" style="font-size: 10px;">IntelliJ</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Momentum/" style="font-size: 10px;">Momentum</a> <a href="/tags/StringBuffer/" style="font-size: 10px;">StringBuffer</a> <a href="/tags/chrome-Momentum/" style="font-size: 10px;">chrome Momentum</a> <a href="/tags/chrome-시계/" style="font-size: 10px;">chrome 시계</a> <a href="/tags/chrome-시계-테마/" style="font-size: 10px;">chrome 시계 테마</a> <a href="/tags/chrome-테마/" style="font-size: 10px;">chrome 테마</a> <a href="/tags/comparable/" style="font-size: 10px;">comparable</a> <a href="/tags/comparator/" style="font-size: 10px;">comparator</a> <a href="/tags/equals/" style="font-size: 10px;">equals()</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/git-branch-develop/" style="font-size: 10px;">git branch develop</a> <a href="/tags/git-branch-선택하기/" style="font-size: 10px;">git branch 선택하기</a> <a href="/tags/hashmap/" style="font-size: 10px;">hashmap</a> <a href="/tags/import/" style="font-size: 10px;">import</a> <a href="/tags/import-없애기/" style="font-size: 10px;">import.*없애기</a> <a href="/tags/reverse/" style="font-size: 15px;">reverse</a> <a href="/tags/배열/" style="font-size: 10px;">배열</a> <a href="/tags/배열-삭제/" style="font-size: 10px;">배열 삭제</a> <a href="/tags/최대값/" style="font-size: 10px;">최대값</a> <a href="/tags/최소값/" style="font-size: 10px;">최소값</a>
         </div>
     </div>
 

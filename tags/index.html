@@ -160,15 +160,15 @@
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2020/03/06/equals/">equals, ==</a>
+        <a href="/2020/03/06/equals/">== vs equals()</a>
         </h1>
     
 
         <p class="article-excerpt">
             Java에서 equals()와 ==는 객체 혹은 내용을 비교할 때 사용하곤 한다. 이 둘은 어떤 차이점이 있을까?
-==
+== : 동일성 비교
 Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인
-그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인123456789//리터럴 생성String str1 = "h
+그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인123456789//리터럴 생성String 
         </p>
     </div>
 </article>
@@ -224,7 +224,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Java/">Java</a></p>
-                            <p class="item-title"><a href="/2020/03/06/equals/" class="title">equals, ==</a></p>
+                            <p class="item-title"><a href="/2020/03/06/equals/" class="title">== vs equals()</a></p>
                             <p class="item-date"><time datetime="2020-03-06T12:13:40.000Z" itemprop="datePublished">2020-03-06</time></p>
                         </div>
                     </li>
@@ -294,7 +294,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/" style="font-size: 10px;">==</a> <a href="/tags/Array/" style="font-size: 10px;">Array</a> <a href="/tags/Array-reverse/" style="font-size: 10px;">Array reverse</a> <a href="/tags/ConcurrentModificationException/" style="font-size: 10px;">ConcurrentModificationException</a> <a href="/tags/IntelliJ/" style="font-size: 10px;">IntelliJ</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Momentum/" style="font-size: 10px;">Momentum</a> <a href="/tags/StringBuffer/" style="font-size: 10px;">StringBuffer</a> <a href="/tags/chrome-Momentum/" style="font-size: 10px;">chrome Momentum</a> <a href="/tags/chrome-시계/" style="font-size: 10px;">chrome 시계</a> <a href="/tags/chrome-시계-테마/" style="font-size: 10px;">chrome 시계 테마</a> <a href="/tags/chrome-테마/" style="font-size: 10px;">chrome 테마</a> <a href="/tags/comparable/" style="font-size: 10px;">comparable</a> <a href="/tags/comparator/" style="font-size: 10px;">comparator</a> <a href="/tags/equals/" style="font-size: 10px;">equals()</a> <a href="/tags/equals/" style="font-size: 10px;">equals(), ==</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/git-branch-develop/" style="font-size: 10px;">git branch develop</a> <a href="/tags/git-branch-선택하기/" style="font-size: 10px;">git branch 선택하기</a> <a href="/tags/hashmap/" style="font-size: 10px;">hashmap</a> <a href="/tags/import/" style="font-size: 10px;">import</a> <a href="/tags/import-없애기/" style="font-size: 10px;">import.*없애기</a> <a href="/tags/reverse/" style="font-size: 15px;">reverse</a> <a href="/tags/배열/" style="font-size: 10px;">배열</a> <a href="/tags/배열-삭제/" style="font-size: 10px;">배열 삭제</a> <a href="/tags/최대값/" style="font-size: 10px;">최대값</a> <a href="/tags/최소값/" style="font-size: 10px;">최소값</a>
+            <a href="/tags/" style="font-size: 10px;">==</a> <a href="/tags/vs-equals/" style="font-size: 10px;">== vs equals()</a> <a href="/tags/Array/" style="font-size: 10px;">Array</a> <a href="/tags/Array-reverse/" style="font-size: 10px;">Array reverse</a> <a href="/tags/ConcurrentModificationException/" style="font-size: 10px;">ConcurrentModificationException</a> <a href="/tags/IntelliJ/" style="font-size: 10px;">IntelliJ</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Momentum/" style="font-size: 10px;">Momentum</a> <a href="/tags/StringBuffer/" style="font-size: 10px;">StringBuffer</a> <a href="/tags/chrome-Momentum/" style="font-size: 10px;">chrome Momentum</a> <a href="/tags/chrome-시계/" style="font-size: 10px;">chrome 시계</a> <a href="/tags/chrome-시계-테마/" style="font-size: 10px;">chrome 시계 테마</a> <a href="/tags/chrome-테마/" style="font-size: 10px;">chrome 테마</a> <a href="/tags/comparable/" style="font-size: 10px;">comparable</a> <a href="/tags/comparator/" style="font-size: 10px;">comparator</a> <a href="/tags/equals/" style="font-size: 10px;">equals()</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/git-branch-develop/" style="font-size: 10px;">git branch develop</a> <a href="/tags/git-branch-선택하기/" style="font-size: 10px;">git branch 선택하기</a> <a href="/tags/hashmap/" style="font-size: 10px;">hashmap</a> <a href="/tags/import/" style="font-size: 10px;">import</a> <a href="/tags/import-없애기/" style="font-size: 10px;">import.*없애기</a> <a href="/tags/reverse/" style="font-size: 15px;">reverse</a> <a href="/tags/배열/" style="font-size: 10px;">배열</a> <a href="/tags/배열-삭제/" style="font-size: 10px;">배열 삭제</a> <a href="/tags/최대값/" style="font-size: 10px;">최대값</a> <a href="/tags/최소값/" style="font-size: 10px;">최소값</a>
         </div>
     </div>
 
