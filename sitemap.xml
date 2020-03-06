@@ -4,22 +4,12 @@
 
     <sitemap>
         <loc>https://invicr.github.io/post-sitemap.xml</loc>
-        <lastmod>2020-03-04T16:06:50.898Z</lastmod>
+        <lastmod>2020-03-06T13:38:42.437Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>https://invicr.github.io/page-sitemap.xml</loc>
         <lastmod>2019-07-21T13:12:29.547Z</lastmod>
-    </sitemap>
-
-    <sitemap>
-        <loc>https://invicr.github.io/category-sitemap.xml</loc>
-        <lastmod>2020-03-04T16:06:50.898Z</lastmod>
-    </sitemap>
-
-    <sitemap>
-        <loc>https://invicr.github.io/tag-sitemap.xml</loc>
-        <lastmod>2020-03-04T16:06:50.898Z</lastmod>
     </sitemap>
 
 </sitemapindex>
