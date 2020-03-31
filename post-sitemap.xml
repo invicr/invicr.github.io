@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://invicr.github.io/2020/03/31/Spring-NoArgsConstructor-RequiredArgsConstructor-AllArgsConstructor/</loc>
+        <lastmod>2020-03-31T13:31:49.643Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://invicr.github.io/2020/03/06/equals/</loc>
         <lastmod>2020-03-06T13:46:37.403Z</lastmod>
         <changefreq>weekly</changefreq>
