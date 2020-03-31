@@ -20,7 +20,7 @@
 <meta property="og:site_name" content="Modern Developer의 개발 일지">
 <meta property="og:description" content="lombok 라이브러리를 사용하면 getter, setter 등을 어노테이션으로 편하게 사용할 수 있다. 그 중에 생성자를 자동으로 생성해주는 어노테이션에 소개하고자 한다. 123456789@NoArgsConstructor@RequiredArgsConstructor@AllArgsConstructorpublic class Student &amp;#123;    @N">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-03-31T13:35:50.814Z">
+<meta property="og:updated_time" content="2020-03-31T13:44:14.515Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[Spring] @NoArgsConstructor, @RequiredArgsConstructor, @AllArgsConstructor">
 <meta name="twitter:description" content="lombok 라이브러리를 사용하면 getter, setter 등을 어노테이션으로 편하게 사용할 수 있다. 그 중에 생성자를 자동으로 생성해주는 어노테이션에 소개하고자 한다. 123456789@NoArgsConstructor@RequiredArgsConstructor@AllArgsConstructorpublic class Student &amp;#123;    @N">
@@ -184,15 +184,15 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>NoArgsConstructor</td>
+<td>@NoArgsConstructor</td>
 <td>파라미터가 없는 기본 생성자를 생성<br><code>Student std = new Student();</code></td>
 </tr>
 <tr>
-<td>RequiredArgsConstructor</td>
+<td>@RequiredArgsConstructor</td>
 <td><code>final</code>이나 <code>@NonNull</code>인 필드 값만 파라미터로 받는 생성자<br><code>Student std = new Student(1L);</code></td>
 </tr>
 <tr>
-<td>AllArgsConstructor</td>
+<td>@AllArgsConstructor</td>
 <td>모든 필드 값을 파라미터로 받는 생성자 생성<br><code>Student std = new Student(1L, &quot;홍길동&quot;, 20);</code></td>
 </tr>
 </tbody></table>
