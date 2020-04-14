@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://invicr.github.io/2020/04/14/JPA-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EA%B3%BC-%EB%9D%BD/</loc>
+        <lastmod>2020-04-14T12:17:23.479Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://invicr.github.io/2020/03/31/Spring-NoArgsConstructor-RequiredArgsConstructor-AllArgsConstructor/</loc>
         <lastmod>2020-03-31T13:44:14.515Z</lastmod>
         <changefreq>weekly</changefreq>
