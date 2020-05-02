@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
 
     
@@ -12,18 +12,20 @@
     
         <meta name="keywords" content="equals(),==,== vs equals()">
     
-    <meta name="description" content="Java에서 equals()와 ==는 객체 혹은 내용을 비교할 때 사용하곤 한다.이 둘은 어떤 차이점이 있을까? == : 동일성 비교 Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인 그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인  123456789//리터럴 생성String">
-<meta name="keywords" content="equals(),==,== vs equals()">
+    <meta name="description" content="Java에서 equals()와 &#x3D;&#x3D;는 객체 혹은 내용을 비교할 때 사용하곤 한다.이 둘은 어떤 차이점이 있을까? &#x3D;&#x3D; : 동일성 비교 Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인 그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인  123456789&#x2F;&#x2F;리터럴 생성String">
 <meta property="og:type" content="article">
-<meta property="og:title" content="== vs equals()">
+<meta property="og:title" content="&#x3D;&#x3D; vs equals()">
 <meta property="og:url" content="https://invicr.github.io/2020/03/06/equals/index.html">
 <meta property="og:site_name" content="Modern Developer의 개발 일지">
-<meta property="og:description" content="Java에서 equals()와 ==는 객체 혹은 내용을 비교할 때 사용하곤 한다.이 둘은 어떤 차이점이 있을까? == : 동일성 비교 Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인 그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인  123456789//리터럴 생성String">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-03-06T13:46:37.403Z">
+<meta property="og:description" content="Java에서 equals()와 &#x3D;&#x3D;는 객체 혹은 내용을 비교할 때 사용하곤 한다.이 둘은 어떤 차이점이 있을까? &#x3D;&#x3D; : 동일성 비교 Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인 그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인  123456789&#x2F;&#x2F;리터럴 생성String">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-06T12:13:40.000Z">
+<meta property="article:modified_time" content="2020-03-06T13:46:37.403Z">
+<meta property="article:author" content="invicr">
+<meta property="article:tag" content="equals()">
+<meta property="article:tag" content="&#x3D;&#x3D;">
+<meta property="article:tag" content="&#x3D;&#x3D; vs equals()">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="== vs equals()">
-<meta name="twitter:description" content="Java에서 equals()와 ==는 객체 혹은 내용을 비교할 때 사용하곤 한다.이 둘은 어떤 차이점이 있을까? == : 동일성 비교 Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인 그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인  123456789//리터럴 생성String">
     
 
     <link rel="canonical" href="https://invicr.github.io/2020/03/06/equals/">
@@ -34,25 +36,39 @@
 
     
 
-    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
-    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="/css/style.css">
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
 
-    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
     
-    
-        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
-    
-    
-        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
-    
-    
-    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
 
 
-</head>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
 </html>
 <body>
     <div id="wrap">
@@ -117,7 +133,9 @@
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
 })(window);
 </script>
+
 <script src="/js/insight.js"></script>
+
 
 </div>
                         </nav>
@@ -166,7 +184,7 @@
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/">==</a>, <a class="tag-link" href="/tags/vs-equals/">== vs equals()</a>, <a class="tag-link" href="/tags/equals/">equals()</a>
+        <a class="tag-link" href="/tags/" rel="tag">==</a>, <a class="tag-link" href="/tags/vs-equals/" rel="tag">== vs equals()</a>, <a class="tag-link" href="/tags/equals/" rel="tag">equals()</a>
     </div>
 
             </div>
@@ -179,7 +197,6 @@
 <li>그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//리터럴 생성</span></span><br><span class="line">String str1 = <span class="string">"hi"</span>;</span><br><span class="line">String str2 = <span class="string">"hi"</span>;</span><br><span class="line">System.out.println(str1 == str2);   <span class="comment">//true</span></span><br><span class="line"><span class="comment">//new를 이용한 생성</span></span><br><span class="line">String str3 = <span class="keyword">new</span> String(<span class="string">"hi"</span>);</span><br><span class="line">String str4 = <span class="keyword">new</span> String(<span class="string">"hi"</span>);</span><br><span class="line">System.out.println(str3 == str4);   <span class="comment">//false</span></span><br><span class="line">System.out.println(str1 == str3);   <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
-
 <p>String의 경우는 조금 특별한데, 리터럴 생성을 하면 String Constant Pool 이라는 영역에 할당되고, new 를 이용한 생성을 하면 Heap에 할당된다.<br>리터럴로 생성한 문자가 같을 경우 메모리 상에서 같은 주소를 바라보게 되고,<br>new로 생성할 경우 생성 할 때마다 새로운 인스턴스를 생성하여 각각 다른 주소 공간에 위치하게 된다.<br>그렇기 때문에</p>
 <ul>
 <li><code>str1 == str2</code> : 리터럴로 생성되어 같은 주소를 바라보고 있기 때문에 <strong>true</strong></li>
@@ -192,19 +209,14 @@
 <li><code>==</code>과 유사하지만 다른 점은 완전히 같은 객체(같은 주소)를 가리키지 않아도 <code>equals()</code> 메서드 오버라이딩을 통해서 true로 만들 수 있다.</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">String str1 = <span class="string">"hi"</span>;</span><br><span class="line">String str2 = <span class="string">"hi"</span>;</span><br><span class="line">System.out.println(str1.equals(str2));   <span class="comment">//true</span></span><br><span class="line">String str3 = <span class="keyword">new</span> String(<span class="string">"hi"</span>);</span><br><span class="line">String str4 = <span class="keyword">new</span> String(<span class="string">"hi"</span>);</span><br><span class="line">System.out.println(str3.equals(str4));   <span class="comment">//true</span></span><br><span class="line">System.out.println(str1.equals(str3));   <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
-
 <p>String에는 이미 <code>equals()</code> 메소드가 오버라이딩 되어 있는 상태이기 때문에 주소값이 다르더라도 내용이 같다면 true를 반환하고 있다.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Student s1 = <span class="keyword">new</span> Student(<span class="string">"1"</span>);</span><br><span class="line">Student s2 = <span class="keyword">new</span> Student(<span class="string">"1"</span>);</span><br><span class="line">System.out.println(s1.equals(s2));  <span class="comment">//false</span></span><br><span class="line">System.out.println(s1.hashCode());  <span class="comment">//1634198</span></span><br><span class="line">System.out.println(s2.hashCode());  <span class="comment">//110456297</span></span><br></pre></td></tr></table></figure>
-
 <p>Student 객체를 만든 뒤 동일한 id 값을 부여한 후 비교하면 주소 값이 다르기 때문에 false를 반환한다. <strong>(hash 값도 다르다.)</strong> true로 만들기 위해서는 <code>equals()</code>와 <code>hashcode()</code> 메소드를 오버라이딩 해준다. IDE에서 자동으로 생성해주나, 조건에 따라 수정하여 사용하도록 한다.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String id;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object o)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span> == o) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (!(o <span class="keyword">instanceof</span> Student)) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        Student student = (Student) o;</span><br><span class="line">        <span class="keyword">return</span> Objects.equals(id, student.id);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">hashCode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Objects.hash(id);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 생성자, getter, setter</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>이후 코드를 재실행하면 결과 값은 true가 나오고 두 객체 모두 동일한 hash 값을 가지게 된다.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Student s1 = <span class="keyword">new</span> Student(<span class="string">"1"</span>);</span><br><span class="line">Student s2 = <span class="keyword">new</span> Student(<span class="string">"1"</span>);</span><br><span class="line">System.out.println(s1.equals(s2));  <span class="comment">//true</span></span><br><span class="line">System.out.println(s1.hashCode());  <span class="comment">//80</span></span><br><span class="line">System.out.println(s2.hashCode());  <span class="comment">//80</span></span><br></pre></td></tr></table></figure>
-
 <p><code>hashcode()</code> 왜 오버라이딩하는지 궁금해 할 것이다. 우리도 모르는 사이에 hash값을 쓰는 곳이 많다. 예를 들면 <code>hashSet</code>이나 <code>hashmap</code> 같은 컬렉션 들이다. <code>equals()</code>만 오버라이딩하고 <code>hashcode()</code>는 하지 않았을 경우엔 같은 객체라 할지라도 <code>hashcode()</code> 값이 다르게 나올 수 있는데, 이때는 다른 객체로 인식하기 때문이다.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Set&lt;Student&gt; stu = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">stu.add(s1);</span><br><span class="line">stu.add(s2);</span><br><span class="line">System.out.println(stu.size());</span><br><span class="line"><span class="comment">// hashcode() 오버라이딩 한 경우 : 1</span></span><br><span class="line"><span class="comment">// hashcode() 오버라이딩 하지 않은 경우 : 2</span></span><br></pre></td></tr></table></figure>
-
 <p><code>hashcode()</code>를 오버라이딩 한 경우 hashcode 값이 같으므로 같은 객체로 인식하여 1이 나온다. (Set은 중복 허용 X) 반면 오버라이딩을 하지 않았을 경우 hashcode 값이 다르므로 다른 객체로 인식하기 때문에 size 값은 2가 된다.<br>그러므로 <code>equals()</code>를 오버라이딩 할 경우 반드시 <code>hashcode()</code>도 오버라이딩 하여 혹시나 모를 불상사를 예방하는 것이 좋다.</p>
 <h3 id="정리"><a href="#정리" class="headerlink" title="정리"></a>정리</h3><ul>
 <li><code>==</code>는 객체 간의 <strong>동일성</strong>을 판단하기 위해 사용한다. <strong>동일성</strong>은 두 개의 객체가 완전히 같을 경우를 의미 한다.</li>
@@ -213,7 +225,7 @@
 <li><code>equals()</code>를 오버라이딩 할 경우 반드시 <code>hashcode()</code>도 오버라이딩 하여야 한다.</li>
 <li><code>equals()</code>로 true가 나온 경우 <code>hashcode()</code>의 값이 동일 해야 한다. 그러나 <code>hashcode()</code>가 동일하다고 해서 반드시 같은 객체는 아니다.</li>
 </ul>
-<h3 id="참고-사이트"><a href="#참고-사이트" class="headerlink" title="참고 사이트"></a>참고 사이트</h3><p><a href="https://jeong-pro.tistory.com/172" rel="external nofollow noopener noreferrer" target="_blank">https://jeong-pro.tistory.com/172</a><br><a href="https://joont.tistory.com/143" rel="external nofollow noopener noreferrer" target="_blank">https://joont.tistory.com/143</a><br><a href="https://madplay.github.io/post/java-string-literal-vs-string-object" rel="external nofollow noopener noreferrer" target="_blank">https://madplay.github.io/post/java-string-literal-vs-string-object</a></p>
+<h3 id="참고-사이트"><a href="#참고-사이트" class="headerlink" title="참고 사이트"></a>참고 사이트</h3><p><a href="https://jeong-pro.tistory.com/172" target="_blank" rel="external nofollow noopener noreferrer">https://jeong-pro.tistory.com/172</a><br><a href="https://joont.tistory.com/143" target="_blank" rel="external nofollow noopener noreferrer">https://joont.tistory.com/143</a><br><a href="https://madplay.github.io/post/java-string-literal-vs-string-object" target="_blank" rel="external nofollow noopener noreferrer">https://madplay.github.io/post/java-string-literal-vs-string-object</a></p>
 
         </div>
         <footer class="article-footer">
@@ -221,7 +233,7 @@
 
 
 
-    <a data-url="https://invicr.github.io/2020/03/06/equals/" data-id="ck9fn30z5000goreffp1wvae6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://invicr.github.io/2020/03/06/equals/" data-id="ck9p2378t000frgefcn3h74z3" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -315,7 +327,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
     
         
     <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
     </div>
 
     
@@ -388,8 +400,17 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
                     <li>
                         
                         <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Book/">Book</a></p>
+                            <p class="item-title"><a href="/2020/05/01/%EC%8B%A4%EB%A6%AC%EC%BD%98%EB%B0%B8%EB%A6%AC-%EC%8A%A4%ED%86%A0%EB%A6%AC/" class="title">실리콘밸리 스토리</a></p>
+                            <p class="item-date"><time datetime="2020-05-01T14:08:59.000Z" itemprop="datePublished">2020-05-01</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/IT/">IT</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/IT/ETC/">ETC</a></p>
-                            <p class="item-title"><a href="/2020/04/25/오픈소스-H-W를-이용한-무인-정찰-로봇/" class="title">오픈소스 H/W를 이용한 무인 정찰 로봇</a></p>
+                            <p class="item-title"><a href="/2020/04/25/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-H-W%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%AC%B4%EC%9D%B8-%EC%A0%95%EC%B0%B0-%EB%A1%9C%EB%B4%87/" class="title">오픈소스 H/W를 이용한 무인 정찰 로봇</a></p>
                             <p class="item-date"><time datetime="2020-04-25T12:58:42.000Z" itemprop="datePublished">2020-04-25</time></p>
                         </div>
                     </li>
@@ -398,7 +419,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/IT/">IT</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/IT/ETC/">ETC</a></p>
-                            <p class="item-title"><a href="/2020/04/25/수리수리마수리거울/" class="title">수리수리 마수리 거울</a></p>
+                            <p class="item-title"><a href="/2020/04/25/%EC%88%98%EB%A6%AC%EC%88%98%EB%A6%AC%EB%A7%88%EC%88%98%EB%A6%AC%EA%B1%B0%EC%9A%B8/" class="title">수리수리 마수리 거울</a></p>
                             <p class="item-date"><time datetime="2020-04-25T12:31:32.000Z" itemprop="datePublished">2020-04-25</time></p>
                         </div>
                     </li>
@@ -407,7 +428,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Book/">Book</a></p>
-                            <p class="item-title"><a href="/2020/04/25/직장이없는시대가온다/" class="title">직장이 없는 시대가 온다</a></p>
+                            <p class="item-title"><a href="/2020/04/25/%EC%A7%81%EC%9E%A5%EC%9D%B4%EC%97%86%EB%8A%94%EC%8B%9C%EB%8C%80%EA%B0%80%EC%98%A8%EB%8B%A4/" class="title">직장이 없는 시대가 온다</a></p>
                             <p class="item-date"><time datetime="2020-04-25T01:16:28.000Z" itemprop="datePublished">2020-04-25</time></p>
                         </div>
                     </li>
@@ -416,17 +437,8 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Book/">Book</a></p>
-                            <p class="item-title"><a href="/2020/04/18/성공하는프로그래밍공부법/" class="title">성공하는 프로그래밍 공부법</a></p>
+                            <p class="item-title"><a href="/2020/04/18/%EC%84%B1%EA%B3%B5%ED%95%98%EB%8A%94%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EA%B3%B5%EB%B6%80%EB%B2%95/" class="title">성공하는 프로그래밍 공부법</a></p>
                             <p class="item-date"><time datetime="2020-04-18T05:25:13.000Z" itemprop="datePublished">2020-04-18</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Book/">Book</a></p>
-                            <p class="item-title"><a href="/2020/04/14/에어비앤비-스토리/" class="title">에어비앤비 스토리</a></p>
-                            <p class="item-date"><time datetime="2020-04-14T12:25:08.000Z" itemprop="datePublished">2020-04-14</time></p>
                         </div>
                     </li>
                 
@@ -439,7 +451,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">categories</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Book/">Book</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/">IT</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/IT/ETC/">ETC</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/IntelliJ/">IntelliJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/JPA/">JPA</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Java/">Java</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Spring/">Spring</a><span class="category-list-count">1</span></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Book/">Book</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/">IT</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/IT/ETC/">ETC</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/IntelliJ/">IntelliJ</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/JPA/">JPA</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Java/">Java</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Spring/">Spring</a><span class="category-list-count">1</span></li></ul></li></ul>
         </div>
     </div>
 
@@ -449,7 +461,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">2</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -459,7 +471,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/" style="font-size: 10px;">==</a> <a href="/tags/vs-equals/" style="font-size: 10px;">== vs equals()</a> <a href="/tags/AllArgsConstructor/" style="font-size: 10px;">AllArgsConstructor</a> <a href="/tags/Array/" style="font-size: 10px;">Array</a> <a href="/tags/Array-reverse/" style="font-size: 10px;">Array reverse</a> <a href="/tags/ConcurrentModificationException/" style="font-size: 10px;">ConcurrentModificationException</a> <a href="/tags/IOTMirror/" style="font-size: 10px;">IOTMirror</a> <a href="/tags/IOT탱크/" style="font-size: 10px;">IOT탱크</a> <a href="/tags/IntelliJ/" style="font-size: 10px;">IntelliJ</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Lock/" style="font-size: 10px;">Lock</a> <a href="/tags/MagicMirror/" style="font-size: 10px;">MagicMirror</a> <a href="/tags/Momentum/" style="font-size: 10px;">Momentum</a> <a href="/tags/NoArgsConstructor/" style="font-size: 10px;">NoArgsConstructor</a> <a href="/tags/OptimisticLock/" style="font-size: 10px;">OptimisticLock</a> <a href="/tags/RequiredArgsConstructor/" style="font-size: 10px;">RequiredArgsConstructor</a> <a href="/tags/StringBuffer/" style="font-size: 10px;">StringBuffer</a> <a href="/tags/Transaction/" style="font-size: 10px;">Transaction</a> <a href="/tags/Version/" style="font-size: 10px;">Version</a> <a href="/tags/chrome-Momentum/" style="font-size: 10px;">chrome Momentum</a> <a href="/tags/chrome-시계/" style="font-size: 10px;">chrome 시계</a> <a href="/tags/chrome-시계-테마/" style="font-size: 10px;">chrome 시계 테마</a> <a href="/tags/chrome-테마/" style="font-size: 10px;">chrome 테마</a> <a href="/tags/comparable/" style="font-size: 10px;">comparable</a> <a href="/tags/comparator/" style="font-size: 10px;">comparator</a> <a href="/tags/equals/" style="font-size: 10px;">equals()</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/git-branch-develop/" style="font-size: 10px;">git branch develop</a> <a href="/tags/git-branch-선택하기/" style="font-size: 10px;">git branch 선택하기</a> <a href="/tags/hashmap/" style="font-size: 10px;">hashmap</a> <a href="/tags/import/" style="font-size: 10px;">import</a> <a href="/tags/import-없애기/" style="font-size: 10px;">import.*없애기</a> <a href="/tags/reverse/" style="font-size: 15px;">reverse</a> <a href="/tags/공부법/" style="font-size: 10px;">공부법</a> <a href="/tags/라즈베리파이/" style="font-size: 10px;">라즈베리파이</a> <a href="/tags/배열/" style="font-size: 10px;">배열</a> <a href="/tags/배열-삭제/" style="font-size: 10px;">배열 삭제</a> <a href="/tags/성공하는프로그래밍공부법/" style="font-size: 10px;">성공하는프로그래밍공부법</a> <a href="/tags/아두이노/" style="font-size: 10px;">아두이노</a> <a href="/tags/에어비앤비스토리/" style="font-size: 10px;">에어비앤비스토리</a> <a href="/tags/정찰로봇/" style="font-size: 10px;">정찰로봇</a> <a href="/tags/직장이없는시대가온다/" style="font-size: 10px;">직장이없는시대가온다</a> <a href="/tags/최대값/" style="font-size: 10px;">최대값</a> <a href="/tags/최소값/" style="font-size: 10px;">최소값</a> <a href="/tags/프로그래밍/" style="font-size: 10px;">프로그래밍</a>
+            <a href="/tags/" style="font-size: 10px;">==</a> <a href="/tags/vs-equals/" style="font-size: 10px;">== vs equals()</a> <a href="/tags/AllArgsConstructor/" style="font-size: 10px;">AllArgsConstructor</a> <a href="/tags/Array/" style="font-size: 10px;">Array</a> <a href="/tags/Array-reverse/" style="font-size: 10px;">Array reverse</a> <a href="/tags/ConcurrentModificationException/" style="font-size: 10px;">ConcurrentModificationException</a> <a href="/tags/IOTMirror/" style="font-size: 10px;">IOTMirror</a> <a href="/tags/IOT%ED%83%B1%ED%81%AC/" style="font-size: 10px;">IOT탱크</a> <a href="/tags/IntelliJ/" style="font-size: 10px;">IntelliJ</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Lock/" style="font-size: 10px;">Lock</a> <a href="/tags/MagicMirror/" style="font-size: 10px;">MagicMirror</a> <a href="/tags/Momentum/" style="font-size: 10px;">Momentum</a> <a href="/tags/NoArgsConstructor/" style="font-size: 10px;">NoArgsConstructor</a> <a href="/tags/OptimisticLock/" style="font-size: 10px;">OptimisticLock</a> <a href="/tags/RequiredArgsConstructor/" style="font-size: 10px;">RequiredArgsConstructor</a> <a href="/tags/StringBuffer/" style="font-size: 10px;">StringBuffer</a> <a href="/tags/Transaction/" style="font-size: 10px;">Transaction</a> <a href="/tags/Version/" style="font-size: 10px;">Version</a> <a href="/tags/chrome-Momentum/" style="font-size: 10px;">chrome Momentum</a> <a href="/tags/chrome-%EC%8B%9C%EA%B3%84/" style="font-size: 10px;">chrome 시계</a> <a href="/tags/chrome-%EC%8B%9C%EA%B3%84-%ED%85%8C%EB%A7%88/" style="font-size: 10px;">chrome 시계 테마</a> <a href="/tags/chrome-%ED%85%8C%EB%A7%88/" style="font-size: 10px;">chrome 테마</a> <a href="/tags/comparable/" style="font-size: 10px;">comparable</a> <a href="/tags/comparator/" style="font-size: 10px;">comparator</a> <a href="/tags/equals/" style="font-size: 10px;">equals()</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/git-branch-develop/" style="font-size: 10px;">git branch develop</a> <a href="/tags/git-branch-%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0/" style="font-size: 10px;">git branch 선택하기</a> <a href="/tags/hashmap/" style="font-size: 10px;">hashmap</a> <a href="/tags/import/" style="font-size: 10px;">import</a> <a href="/tags/import-%EC%97%86%EC%95%A0%EA%B8%B0/" style="font-size: 10px;">import.*없애기</a> <a href="/tags/reverse/" style="font-size: 15px;">reverse</a> <a href="/tags/%EA%B3%B5%EB%B6%80%EB%B2%95/" style="font-size: 10px;">공부법</a> <a href="/tags/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4/" style="font-size: 10px;">라즈베리파이</a> <a href="/tags/%EB%B0%B0%EC%97%B4/" style="font-size: 10px;">배열</a> <a href="/tags/%EB%B0%B0%EC%97%B4-%EC%82%AD%EC%A0%9C/" style="font-size: 10px;">배열 삭제</a> <a href="/tags/%EC%84%B1%EA%B3%B5%ED%95%98%EB%8A%94%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EA%B3%B5%EB%B6%80%EB%B2%95/" style="font-size: 10px;">성공하는프로그래밍공부법</a> <a href="/tags/%EC%8B%A4%EB%9E%98%EC%BD%98%EB%B0%B8%EB%A6%AC%EC%8A%A4%ED%86%A0%EB%A6%AC/" style="font-size: 10px;">실래콘밸리스토리</a> <a href="/tags/%EC%8B%A4%EB%A6%AC%EC%BD%98%EB%B0%B8%EB%A6%AC/" style="font-size: 10px;">실리콘밸리</a> <a href="/tags/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/" style="font-size: 10px;">아두이노</a> <a href="/tags/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84%EC%8A%A4%ED%86%A0%EB%A6%AC/" style="font-size: 10px;">에어비앤비스토리</a> <a href="/tags/%EC%A0%95%EC%B0%B0%EB%A1%9C%EB%B4%87/" style="font-size: 10px;">정찰로봇</a> <a href="/tags/%EC%A7%81%EC%9E%A5%EC%9D%B4%EC%97%86%EB%8A%94%EC%8B%9C%EB%8C%80%EA%B0%80%EC%98%A8%EB%8B%A4/" style="font-size: 10px;">직장이없는시대가온다</a> <a href="/tags/%EC%B5%9C%EB%8C%80%EA%B0%92/" style="font-size: 10px;">최대값</a> <a href="/tags/%EC%B5%9C%EC%86%8C%EA%B0%92/" style="font-size: 10px;">최소값</a> <a href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" style="font-size: 10px;">프로그래밍</a>
         </div>
     </div>
 
@@ -472,7 +484,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
             <ul>
                 
                     <li>
-                        <a href="http://hexo.io" rel="external nofollow noopener noreferrer" target="_blank">Hexo</a>
+                        <a href="http://hexo.io" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>
                     </li>
                 
             </ul>
@@ -530,25 +542,47 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
 
 
     
-        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
     
     
-        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
     
     
 
 
 
 <!-- Custom Scripts -->
+
 <script src="/js/main.js"></script>
+
 
     </div>
 </body>
