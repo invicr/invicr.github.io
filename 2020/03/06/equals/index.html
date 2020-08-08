@@ -68,8 +68,8 @@
     
 
 
-<meta name="generator" content="Hexo 4.2.0"></head>
-</html>
+<meta name="generator" content="Hexo 5.0.0"></head>
+
 <body>
     <div id="wrap">
         <header id="header">
@@ -184,7 +184,7 @@
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/" rel="tag">==</a>, <a class="tag-link" href="/tags/vs-equals/" rel="tag">== vs equals()</a>, <a class="tag-link" href="/tags/equals/" rel="tag">equals()</a>
+        <a class="tag-link-link" href="/tags/" rel="tag">==</a>, <a class="tag-link-link" href="/tags/vs-equals/" rel="tag">== vs equals()</a>, <a class="tag-link-link" href="/tags/equals/" rel="tag">equals()</a>
     </div>
 
             </div>
@@ -196,7 +196,7 @@
 <li>Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 확인</li>
 <li>그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//리터럴 생성</span></span><br><span class="line">String str1 = <span class="string">"hi"</span>;</span><br><span class="line">String str2 = <span class="string">"hi"</span>;</span><br><span class="line">System.out.println(str1 == str2);   <span class="comment">//true</span></span><br><span class="line"><span class="comment">//new를 이용한 생성</span></span><br><span class="line">String str3 = <span class="keyword">new</span> String(<span class="string">"hi"</span>);</span><br><span class="line">String str4 = <span class="keyword">new</span> String(<span class="string">"hi"</span>);</span><br><span class="line">System.out.println(str3 == str4);   <span class="comment">//false</span></span><br><span class="line">System.out.println(str1 == str3);   <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//리터럴 생성</span></span><br><span class="line">String str1 = <span class="string">&quot;hi&quot;</span>;</span><br><span class="line">String str2 = <span class="string">&quot;hi&quot;</span>;</span><br><span class="line">System.out.println(str1 == str2);   <span class="comment">//true</span></span><br><span class="line"><span class="comment">//new를 이용한 생성</span></span><br><span class="line">String str3 = <span class="keyword">new</span> String(<span class="string">&quot;hi&quot;</span>);</span><br><span class="line">String str4 = <span class="keyword">new</span> String(<span class="string">&quot;hi&quot;</span>);</span><br><span class="line">System.out.println(str3 == str4);   <span class="comment">//false</span></span><br><span class="line">System.out.println(str1 == str3);   <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
 <p>String의 경우는 조금 특별한데, 리터럴 생성을 하면 String Constant Pool 이라는 영역에 할당되고, new 를 이용한 생성을 하면 Heap에 할당된다.<br>리터럴로 생성한 문자가 같을 경우 메모리 상에서 같은 주소를 바라보게 되고,<br>new로 생성할 경우 생성 할 때마다 새로운 인스턴스를 생성하여 각각 다른 주소 공간에 위치하게 된다.<br>그렇기 때문에</p>
 <ul>
 <li><code>str1 == str2</code> : 리터럴로 생성되어 같은 주소를 바라보고 있기 때문에 <strong>true</strong></li>
@@ -208,13 +208,13 @@
 <li>그 외 객체나 Reference Type일 경우에는 주소가 같은지 확인</li>
 <li><code>==</code>과 유사하지만 다른 점은 완전히 같은 객체(같은 주소)를 가리키지 않아도 <code>equals()</code> 메서드 오버라이딩을 통해서 true로 만들 수 있다.</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">String str1 = <span class="string">"hi"</span>;</span><br><span class="line">String str2 = <span class="string">"hi"</span>;</span><br><span class="line">System.out.println(str1.equals(str2));   <span class="comment">//true</span></span><br><span class="line">String str3 = <span class="keyword">new</span> String(<span class="string">"hi"</span>);</span><br><span class="line">String str4 = <span class="keyword">new</span> String(<span class="string">"hi"</span>);</span><br><span class="line">System.out.println(str3.equals(str4));   <span class="comment">//true</span></span><br><span class="line">System.out.println(str1.equals(str3));   <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">String str1 = <span class="string">&quot;hi&quot;</span>;</span><br><span class="line">String str2 = <span class="string">&quot;hi&quot;</span>;</span><br><span class="line">System.out.println(str1.equals(str2));   <span class="comment">//true</span></span><br><span class="line">String str3 = <span class="keyword">new</span> String(<span class="string">&quot;hi&quot;</span>);</span><br><span class="line">String str4 = <span class="keyword">new</span> String(<span class="string">&quot;hi&quot;</span>);</span><br><span class="line">System.out.println(str3.equals(str4));   <span class="comment">//true</span></span><br><span class="line">System.out.println(str1.equals(str3));   <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
 <p>String에는 이미 <code>equals()</code> 메소드가 오버라이딩 되어 있는 상태이기 때문에 주소값이 다르더라도 내용이 같다면 true를 반환하고 있다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Student s1 = <span class="keyword">new</span> Student(<span class="string">"1"</span>);</span><br><span class="line">Student s2 = <span class="keyword">new</span> Student(<span class="string">"1"</span>);</span><br><span class="line">System.out.println(s1.equals(s2));  <span class="comment">//false</span></span><br><span class="line">System.out.println(s1.hashCode());  <span class="comment">//1634198</span></span><br><span class="line">System.out.println(s2.hashCode());  <span class="comment">//110456297</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Student s1 = <span class="keyword">new</span> Student(<span class="string">&quot;1&quot;</span>);</span><br><span class="line">Student s2 = <span class="keyword">new</span> Student(<span class="string">&quot;1&quot;</span>);</span><br><span class="line">System.out.println(s1.equals(s2));  <span class="comment">//false</span></span><br><span class="line">System.out.println(s1.hashCode());  <span class="comment">//1634198</span></span><br><span class="line">System.out.println(s2.hashCode());  <span class="comment">//110456297</span></span><br></pre></td></tr></table></figure>
 <p>Student 객체를 만든 뒤 동일한 id 값을 부여한 후 비교하면 주소 값이 다르기 때문에 false를 반환한다. <strong>(hash 값도 다르다.)</strong> true로 만들기 위해서는 <code>equals()</code>와 <code>hashcode()</code> 메소드를 오버라이딩 해준다. IDE에서 자동으로 생성해주나, 조건에 따라 수정하여 사용하도록 한다.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String id;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object o)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span> == o) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (!(o <span class="keyword">instanceof</span> Student)) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        Student student = (Student) o;</span><br><span class="line">        <span class="keyword">return</span> Objects.equals(id, student.id);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">hashCode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Objects.hash(id);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 생성자, getter, setter</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>이후 코드를 재실행하면 결과 값은 true가 나오고 두 객체 모두 동일한 hash 값을 가지게 된다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Student s1 = <span class="keyword">new</span> Student(<span class="string">"1"</span>);</span><br><span class="line">Student s2 = <span class="keyword">new</span> Student(<span class="string">"1"</span>);</span><br><span class="line">System.out.println(s1.equals(s2));  <span class="comment">//true</span></span><br><span class="line">System.out.println(s1.hashCode());  <span class="comment">//80</span></span><br><span class="line">System.out.println(s2.hashCode());  <span class="comment">//80</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Student s1 = <span class="keyword">new</span> Student(<span class="string">&quot;1&quot;</span>);</span><br><span class="line">Student s2 = <span class="keyword">new</span> Student(<span class="string">&quot;1&quot;</span>);</span><br><span class="line">System.out.println(s1.equals(s2));  <span class="comment">//true</span></span><br><span class="line">System.out.println(s1.hashCode());  <span class="comment">//80</span></span><br><span class="line">System.out.println(s2.hashCode());  <span class="comment">//80</span></span><br></pre></td></tr></table></figure>
 <p><code>hashcode()</code> 왜 오버라이딩하는지 궁금해 할 것이다. 우리도 모르는 사이에 hash값을 쓰는 곳이 많다. 예를 들면 <code>hashSet</code>이나 <code>hashmap</code> 같은 컬렉션 들이다. <code>equals()</code>만 오버라이딩하고 <code>hashcode()</code>는 하지 않았을 경우엔 같은 객체라 할지라도 <code>hashcode()</code> 값이 다르게 나올 수 있는데, 이때는 다른 객체로 인식하기 때문이다.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Set&lt;Student&gt; stu = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">stu.add(s1);</span><br><span class="line">stu.add(s2);</span><br><span class="line">System.out.println(stu.size());</span><br><span class="line"><span class="comment">// hashcode() 오버라이딩 한 경우 : 1</span></span><br><span class="line"><span class="comment">// hashcode() 오버라이딩 하지 않은 경우 : 2</span></span><br></pre></td></tr></table></figure>
 <p><code>hashcode()</code>를 오버라이딩 한 경우 hashcode 값이 같으므로 같은 객체로 인식하여 1이 나온다. (Set은 중복 허용 X) 반면 오버라이딩을 하지 않았을 경우 hashcode 값이 다르므로 다른 객체로 인식하기 때문에 size 값은 2가 된다.<br>그러므로 <code>equals()</code>를 오버라이딩 할 경우 반드시 <code>hashcode()</code>도 오버라이딩 하여 혹시나 모를 불상사를 예방하는 것이 좋다.</p>
@@ -225,7 +225,7 @@
 <li><code>equals()</code>를 오버라이딩 할 경우 반드시 <code>hashcode()</code>도 오버라이딩 하여야 한다.</li>
 <li><code>equals()</code>로 true가 나온 경우 <code>hashcode()</code>의 값이 동일 해야 한다. 그러나 <code>hashcode()</code>가 동일하다고 해서 반드시 같은 객체는 아니다.</li>
 </ul>
-<h3 id="참고-사이트"><a href="#참고-사이트" class="headerlink" title="참고 사이트"></a>참고 사이트</h3><p><a href="https://jeong-pro.tistory.com/172" target="_blank" rel="external nofollow noopener noreferrer">https://jeong-pro.tistory.com/172</a><br><a href="https://joont.tistory.com/143" target="_blank" rel="external nofollow noopener noreferrer">https://joont.tistory.com/143</a><br><a href="https://madplay.github.io/post/java-string-literal-vs-string-object" target="_blank" rel="external nofollow noopener noreferrer">https://madplay.github.io/post/java-string-literal-vs-string-object</a></p>
+<h3 id="참고-사이트"><a href="#참고-사이트" class="headerlink" title="참고 사이트"></a>참고 사이트</h3><p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://jeong-pro.tistory.com/172">https://jeong-pro.tistory.com/172</a><br><a target="_blank" rel="external nofollow noopener noreferrer" href="https://joont.tistory.com/143">https://joont.tistory.com/143</a><br><a target="_blank" rel="external nofollow noopener noreferrer" href="https://madplay.github.io/post/java-string-literal-vs-string-object">https://madplay.github.io/post/java-string-literal-vs-string-object</a></p>
 
         </div>
         <footer class="article-footer">
@@ -233,7 +233,7 @@
 
 
 
-    <a data-url="https://invicr.github.io/2020/03/06/equals/" data-id="ck9p2378t000frgefcn3h74z3" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://invicr.github.io/2020/03/06/equals/" data-id="ckdlns287000fl49yc3wx8ifx" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -317,7 +317,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
 그 외에 객체나 Reference Type일 경우에는 주소가 같은지 확인
 
 123456789//리터럴 생성String"
-        "wordCount": 805
+        "wordCount": 790
     }
 </script>
 
@@ -327,7 +327,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
     
         
     <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 
     
@@ -484,7 +484,7 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
             <ul>
                 
                     <li>
-                        <a href="http://hexo.io" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>
+                        <a target="_blank" rel="external nofollow noopener noreferrer" href="http://hexo.io">Hexo</a>
                     </li>
                 
             </ul>
@@ -586,4 +586,4 @@ Primitive Type(int, float, double, long 등)일 경우에는 값이 같은 지 �
 
     </div>
 </body>
-
+</html>

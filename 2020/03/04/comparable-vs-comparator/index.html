@@ -67,8 +67,8 @@
     
 
 
-<meta name="generator" content="Hexo 4.2.0"></head>
-</html>
+<meta name="generator" content="Hexo 5.0.0"></head>
+
 <body>
     <div id="wrap">
         <header id="header">
@@ -183,7 +183,7 @@
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/comparable/" rel="tag">comparable</a>, <a class="tag-link" href="/tags/comparator/" rel="tag">comparator</a>
+        <a class="tag-link-link" href="/tags/comparable/" rel="tag">comparable</a>, <a class="tag-link-link" href="/tags/comparator/" rel="tag">comparator</a>
     </div>
 
             </div>
@@ -194,7 +194,7 @@
 <h3 id="2-예제로-살펴보기"><a href="#2-예제로-살펴보기" class="headerlink" title="2.예제로 살펴보기"></a>2.예제로 살펴보기</h3><p>Player 클래스 만들기</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Player</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> ranking;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 생성자 및 getter, setter</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>메인 메소드에서 footballTeam을 만들고 정렬을 시도하자.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    List&lt;Player&gt; footballTeam = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    Player player1 = <span class="keyword">new</span> Player(<span class="number">59</span>, <span class="string">"John"</span>, <span class="number">20</span>);</span><br><span class="line">    Player player2 = <span class="keyword">new</span> Player(<span class="number">67</span>, <span class="string">"Roger"</span>, <span class="number">22</span>);</span><br><span class="line">    Player player3 = <span class="keyword">new</span> Player(<span class="number">45</span>, <span class="string">"Steven"</span>, <span class="number">24</span>);</span><br><span class="line"></span><br><span class="line">    footballTeam.add(player1);</span><br><span class="line">    footballTeam.add(player2);</span><br><span class="line">    footballTeam.add(player3);</span><br><span class="line"></span><br><span class="line">    System.out.println(<span class="string">"Before Sorting : "</span> + footballTeam);</span><br><span class="line">    Collections.sort(footballTeam);</span><br><span class="line">    System.out.println(<span class="string">"After Sorting : "</span> + footballTeam);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    List&lt;Player&gt; footballTeam = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    Player player1 = <span class="keyword">new</span> Player(<span class="number">59</span>, <span class="string">&quot;John&quot;</span>, <span class="number">20</span>);</span><br><span class="line">    Player player2 = <span class="keyword">new</span> Player(<span class="number">67</span>, <span class="string">&quot;Roger&quot;</span>, <span class="number">22</span>);</span><br><span class="line">    Player player3 = <span class="keyword">new</span> Player(<span class="number">45</span>, <span class="string">&quot;Steven&quot;</span>, <span class="number">24</span>);</span><br><span class="line"></span><br><span class="line">    footballTeam.add(player1);</span><br><span class="line">    footballTeam.add(player2);</span><br><span class="line">    footballTeam.add(player3);</span><br><span class="line"></span><br><span class="line">    System.out.println(<span class="string">&quot;Before Sorting : &quot;</span> + footballTeam);</span><br><span class="line">    Collections.sort(footballTeam);</span><br><span class="line">    System.out.println(<span class="string">&quot;After Sorting : &quot;</span> + footballTeam);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>아래와 같은 에러가 발생한다. 개인적인 생각으로는 footballTeam을 정렬하고 싶지만, 정렬해야하는 조건을 별도로 지정해주지 않았기 때문에 ranking, name, age 중 어떤 조건으로 정렬해야하는지 알지 못하기 때문에 발생하는 에러이지 않을까하는 생각이 든다.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Error:(<span class="number">17</span>, <span class="number">20</span>) java: <span class="function">no suitable method found <span class="keyword">for</span> <span class="title">sort</span><span class="params">(java.util.List&lt;Player&gt;)</span></span></span><br><span class="line"><span class="function">    method java.util.Collections.&lt;T&gt;<span class="title">sort</span><span class="params">(java.util.List&lt;T&gt;)</span> is not applicable</span></span><br><span class="line"><span class="function">      <span class="params">(inference variable T has incompatible bounds</span></span></span><br><span class="line"><span class="function"><span class="params">        equality constraints: Player</span></span></span><br><span class="line"><span class="function"><span class="params">        upper bounds: java.lang.Comparable&lt;? <span class="keyword">super</span> T&gt;)</span></span></span><br><span class="line"><span class="function">    method java.util.Collections.&lt;T&gt;<span class="title">sort</span><span class="params">(java.util.List&lt;T&gt;,java.util.Comparator&lt;? <span class="keyword">super</span> T&gt;)</span> is not applicable</span></span><br><span class="line"><span class="function">      <span class="params">(cannot infer type-variable(s)</span> T</span></span><br><span class="line"><span class="function">        <span class="params">(actual and formal argument lists differ in length)</span>)</span></span><br></pre></td></tr></table></figure>
 
@@ -202,7 +202,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Player</span> <span class="keyword">implements</span> <span class="title">Comparable</span>&lt;<span class="title">Player</span>&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> ranking;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 생성자 및 getter, setter, toString</span></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compareTo</span><span class="params">(Player otherPlayer)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (<span class="keyword">this</span>.getRanking() - otherPlayer.getRanking());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><code>compareTo()</code> 메소드는 구현된 객체와 매개변수로 넘어온 객체를 비교하며, 비교에 따른 결과 값을 return 하게 된다. 객체와 매개변수 객체를 비교 하였을 때 작으면 음수, 같으면 0, 크면 양수를 반환한다.</p>
 <p>main 함수를 다시 실행하면 아래와 같이 ranking을 기준으로 정렬된 결과가 출력된다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Before Sorting : [Player&#123;ranking=<span class="number">59</span>, name=<span class="string">'John'</span>, age=<span class="number">20</span>&#125;, Player&#123;ranking=<span class="number">67</span>, name=<span class="string">'Roger'</span>, age=<span class="number">22</span>&#125;, Player&#123;ranking=<span class="number">45</span>, name=<span class="string">'Steven'</span>, age=<span class="number">24</span>&#125;]</span><br><span class="line">After Sorting : [Player&#123;ranking=<span class="number">45</span>, name=<span class="string">'Steven'</span>, age=<span class="number">24</span>&#125;, Player&#123;ranking=<span class="number">59</span>, name=<span class="string">'John'</span>, age=<span class="number">20</span>&#125;, Player&#123;ranking=<span class="number">67</span>, name=<span class="string">'Roger'</span>, age=<span class="number">22</span>&#125;]</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Before Sorting : [Player&#123;ranking=<span class="number">59</span>, name=<span class="string">&#x27;John&#x27;</span>, age=<span class="number">20</span>&#125;, Player&#123;ranking=<span class="number">67</span>, name=<span class="string">&#x27;Roger&#x27;</span>, age=<span class="number">22</span>&#125;, Player&#123;ranking=<span class="number">45</span>, name=<span class="string">&#x27;Steven&#x27;</span>, age=<span class="number">24</span>&#125;]</span><br><span class="line">After Sorting : [Player&#123;ranking=<span class="number">45</span>, name=<span class="string">&#x27;Steven&#x27;</span>, age=<span class="number">24</span>&#125;, Player&#123;ranking=<span class="number">59</span>, name=<span class="string">&#x27;John&#x27;</span>, age=<span class="number">20</span>&#125;, Player&#123;ranking=<span class="number">67</span>, name=<span class="string">&#x27;Roger&#x27;</span>, age=<span class="number">22</span>&#125;]</span><br></pre></td></tr></table></figure>
 <h3 id="4-Comparator"><a href="#4-Comparator" class="headerlink" title="4.Comparator"></a>4.Comparator</h3><p><code>Comparator</code>는 객체 간의 특정한 정렬이 필요할 때, <code>Comparator</code> 인터페이스를 확장해서 특정 기준을 정의하는 <code>compare()</code> 메소드를 오버라이딩하여 구현한다.</p>
 <p>아래는 ranking과 age로 정렬하는 별도의 구현 클래스이다.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PlayerRankingComparator</span> <span class="keyword">implements</span> <span class="title">Comparator</span>&lt;<span class="title">Player</span>&gt; </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Player firstPlayer, Player secondPlayer)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> (firstPlayer.getRanking() - secondPlayer.getRanking());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -215,7 +215,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">footballTeam.sort(Comparator.comparing(Player::getRanking).thenComparing(Player::getAge));</span><br></pre></td></tr></table></figure>
 
 <h3 id="6-정리"><a href="#6-정리" class="headerlink" title="6.정리"></a>6.정리</h3><p>Primitive Type나 Reference Type은 기본적으로 Java에서 제공해주는 Object의 경우는 기본적으로 <code>Comparable</code> 인터페이스를 구현하고 있어서 <code>Arrays.sort</code> 같은 함수를 사용하면 자동으로 자연적인 정렬(오름차순)이 가능하다. 하지만 별도로 만든 객체를 sort 메소드를 통해서 정렬하거나, 혹은 특정한 조건을 기반으로 정렬하는 경우는 반드시 <code>Comparable</code> 인터페이스를 구현하여야 직접 정렬 기준을 구현하여야 한다.<br><code>Comparator</code>은 Reference Type을 내가 원하는대로 정렬하고 싶을때나 기존에 구현된 <code>Comparable</code>의 정렬과는 다른 결과를 얻고 싶을 때 사용한다.</p>
-<h3 id="참고-사이트"><a href="#참고-사이트" class="headerlink" title="참고 사이트"></a>참고 사이트</h3><p><a href="https://www.baeldung.com/java-comparator-comparable" target="_blank" rel="external nofollow noopener noreferrer">https://www.baeldung.com/java-comparator-comparable</a><br><a href="https://dev-daddy.tistory.com/23" target="_blank" rel="external nofollow noopener noreferrer">https://dev-daddy.tistory.com/23</a><br><a href="https://jeong-pro.tistory.com/173" target="_blank" rel="external nofollow noopener noreferrer">https://jeong-pro.tistory.com/173</a><br><a href="https://javaplant.tistory.com/15" target="_blank" rel="external nofollow noopener noreferrer">https://javaplant.tistory.com/15</a></p>
+<h3 id="참고-사이트"><a href="#참고-사이트" class="headerlink" title="참고 사이트"></a>참고 사이트</h3><p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.baeldung.com/java-comparator-comparable">https://www.baeldung.com/java-comparator-comparable</a><br><a target="_blank" rel="external nofollow noopener noreferrer" href="https://dev-daddy.tistory.com/23">https://dev-daddy.tistory.com/23</a><br><a target="_blank" rel="external nofollow noopener noreferrer" href="https://jeong-pro.tistory.com/173">https://jeong-pro.tistory.com/173</a><br><a target="_blank" rel="external nofollow noopener noreferrer" href="https://javaplant.tistory.com/15">https://javaplant.tistory.com/15</a></p>
 
         </div>
         <footer class="article-footer">
@@ -223,7 +223,7 @@
 
 
 
-    <a data-url="https://invicr.github.io/2020/03/04/comparable-vs-comparator/" data-id="ck9p2378s000ergef3ervh1cq" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://invicr.github.io/2020/03/04/comparable-vs-comparator/" data-id="ckdlns286000el49yc8fl84lu" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -304,7 +304,7 @@
         "description": "1.개요자바 객체를 비교하기 위해서 Comparable 혹은 Comparator라는 인터페이스를 사용하게 된다. 두 인터페이스의 차이점을 예제로 살펴보도록 하자.
 2.예제로 살펴보기Player 클래스 만들기
 1234567public class Player &#123;    private int ranking;    private String name;   "
-        "wordCount": 925
+        "wordCount": 905
     }
 </script>
 
@@ -314,7 +314,7 @@
     
         
     <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 
     
@@ -471,7 +471,7 @@
             <ul>
                 
                     <li>
-                        <a href="http://hexo.io" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>
+                        <a target="_blank" rel="external nofollow noopener noreferrer" href="http://hexo.io">Hexo</a>
                     </li>
                 
             </ul>
@@ -573,4 +573,4 @@
 
     </div>
 </body>
-
+</html>
